@@ -20,10 +20,10 @@ variable "project_name" {
 
 variable "instance_type" {
   type        = string
-  description = "Project Name to be use to name resources"
+  description = "Tipo da instancia da ec2"
 }
 
 variable "ami" {
   type        = string
-  description = "Project Name to be use to name resources"
+  description = "Numero da ami"
 }

@@ -17,7 +17,11 @@ terraform {
 
 }
 
+# provider "aws" {
+#   region = var.region
+# }
+
 provider "aws" {
+  #alias = "east"
   region = var.region
 }
-
