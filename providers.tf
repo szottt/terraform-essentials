@@ -9,10 +9,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket  = "devops-terraform-config"
-    key     = "config/dev/essentials/terraform.tfstate"
-    region  = "us-east-1"
-    encrypt = true
+    bucket            = "devops-terraform-config"
+    dynamodb_endpoint = "terraform-state-lock-dynamo"
+    key               = "config/dev/essentials/terraform.tfstate"
+    region            = "us-east-1"
+    encrypt           = true
   }
 
 }
