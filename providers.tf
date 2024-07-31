@@ -23,6 +23,7 @@ terraform {
 # }
 
 provider "aws" {
+  region = terraform.workspace == "default" ? "us-east-1" : "us-east-2"
   #alias = "east"
-  region = var.region
+  #region = var.region
 }
