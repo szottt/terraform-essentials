@@ -27,3 +27,6 @@ variable "ami" {
   type        = string
   description = "Numero da ami"
 }
+
+variable "servers" {
+}

@@ -6,4 +6,5 @@ module "ec2" {
   env           = var.env
   instance_type = var.instance_type
   ami           = var.ami
+  servers       = var.servers
 }
